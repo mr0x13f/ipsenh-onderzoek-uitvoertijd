@@ -1,0 +1,1 @@
+myServerlessFunction=function(){return"Hello World!"};

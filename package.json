@@ -1,0 +1,24 @@
+{
+  "name": "uitvoertijd-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tsc-out/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npm run build && node tsc-out/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-spreadsheet": "^3.2.0",
+    "jsonc-parser": "^3.0.0",
+    "pg": "^8.7.1",
+    "vm2": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/google-spreadsheet": "^3.1.5",
+    "@types/pg": "^8.6.3"
+  }
+}
