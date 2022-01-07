@@ -1,0 +1,47 @@
+{
+    // The name of the function defined in source_code.js and source_minified.js
+    "functionName": "myServerlessFunction",
+
+    // How many times each step will be benchmarked
+    // WARNING! If "writeResultsToSheet" is enabled, a row will be created for every iteration!
+    "iterations": 1000,
+
+    // Whether to print average times of all steps to the console
+    "logAverageTimes": true,
+
+    // Whether to upload all times to a Google Sheets document
+    "writeResultsToSheet": true,
+
+    // PostgreSQL database connection
+    "postgres": {
+        // Postgres host
+        "host": "localhost",
+        "port": 5432,
+        // Postgres user
+        "user": "postgres",
+        "password": "postgres",
+        // Database to use
+        // This should already exist
+        "database": "ipsenh-onderzoek-uitvoertijd"
+    },
+
+    // Google Sheets connection (optional)
+    "googleSheets": {
+
+        // ID of the Google Sheets document to write to
+        // Can be found in the URL when editing a document in the browser
+        "docId": "",
+
+        // Authentication
+        // For help, see: https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication
+        "clientEmail": "",
+        "privateKey": "",
+        
+        // Title of the sheet to use
+        // Will be suffixed with the date and run number if "dateSheet" is enabled
+        "sheetTitle": "Results",
+
+        // Whether to create a new sheet for every run, marked with the date and run number of that day
+        "dateSheet": false
+    }
+}
