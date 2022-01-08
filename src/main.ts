@@ -50,13 +50,13 @@ async function main(): Promise<void> {
     if (config.logAverageTimes) {
         console.log(`Average times after ${config.iterations} iterations:`);
         console.log(`\tSource:`);
-        console.log(`\t\tRetrieve: ${measurements.source.retrieve.average.getAverageTime()}s`);
-        console.log(`\t\tParse: ${measurements.source.parse.average.getAverageTime()}s`);
-        console.log(`\t\tRun: ${measurements.source.run.average.getAverageTime()}s`);
+        console.log(`\t\tRetrieve: ${measurements.source.retrieve.average.getAverageTime()}ms`);
+        console.log(`\t\tParse: ${measurements.source.parse.average.getAverageTime()}ms`);
+        console.log(`\t\tRun: ${measurements.source.run.average.getAverageTime()}ms`);
         console.log(`\tMinified:`);
-        console.log(`\t\tRetrieve: ${measurements.minified.retrieve.average.getAverageTime()}s`);
-        console.log(`\t\tParse: ${measurements.minified.parse.average.getAverageTime()}s`);
-        console.log(`\t\tRun: ${measurements.minified.run.average.getAverageTime()}s`);
+        console.log(`\t\tRetrieve: ${measurements.minified.retrieve.average.getAverageTime()}ms`);
+        console.log(`\t\tParse: ${measurements.minified.parse.average.getAverageTime()}ms`);
+        console.log(`\t\tRun: ${measurements.minified.run.average.getAverageTime()}ms`);
     }
 
     if (config.writeResultsToSheet)
